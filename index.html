@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OFFICE SCHOOL</title>
+    <style>  
+
+      *{
+        margin:0;
+        padding:0;
+      }
+
+      a{
+        text-decoration:none;
+        color:#6C6C6C;
+      }
+
+      body{
+        font-family: '微软雅黑','宋体';
+        font-size: 14px;
+        background-color:#FDFCF8;
+      }
+
+      
+
+      /*--------------------------header-------------------------*/
+
+      /*头部样式*/
+      .header{
+        width:1210px;
+        height:100px;
+        background-color:;
+        margin:0 auto;
+      }
+
+      /*logo*/
+      .header img{
+        width:250px;
+        margin-top:10px;
+      }
+
+      /*--------------------------nav---------------------------*/
+
+      .nav{
+        width:1210px;
+        height:50px;
+        background-color:#E8E7E3;
+        margin:0 auto;
+      }
+
+      /*导航条li标签样式*/
+      .nav ul li{
+        width:242px;
+        height:50px;
+        background-color:#e3e3e3;
+        float:left;
+        list-style:none;
+        text-align:center;
+        line-height:50px;
+        font-size:17px;
+        font-weight:550;
+      }
+
+      /*鼠标悬停效果*/
+      .nav ul li:hover{
+        background-color:#3F3F3F;
+      }
+
+      .nav ul li:hover a{
+        color:#FDFCF8;
+      }
+
+      /*-----------------------continer------------------------*/
+
+      .continer{
+        width:1210px;
+        height:1210px;
+        background-color:;
+        margin:0 auto;
+        margin-top:30px;
+      }
+
+      .continer .left{
+        width:180px;
+        height:1210px;
+        background-color:#e3e3e3;
+        float:left;
+      }
+
+      .continer .middle{
+        width:850px;
+        height:1210px;
+        background-color:;
+        float:left;
+      }
+
+      .continer .right{
+        width:180px;
+        height:1210px;
+        background-color:#e3e3e3;
+        float:left;
+      }
+
+      /*-------------------------left-------------------------*/
+
+      .continer .left h1{
+        height:40px;
+        margin-bottom:20px;
+        padding-left:60px;
+        font-size:17px;
+        font-weight:550;
+        line-height:40px;
+        color:#6C6C6C;
+        background-color:#1233;
+      }
+      
+      .continer .left h1:nth-of-type(2){
+        margin-top:20px;
+      }
+
+      .continer .left h2{
+        font-size:15px;
+        font-weight:400;
+        margin-top:10px;
+        margin-left:15px;
+        margin-bottom:8px;
+        font-family:'微软雅黑';
+        color:black;
+      }
+
+      .continer .left ul{
+        margin-top:5px;
+      }
+
+      .continer .left ul li{
+        width:165px;
+        height:30px;
+        list-style:none;
+        padding-top:2px;
+        padding-left:15px;
+        line-height:30px;
+      }
+
+      .continer .left ul li a{
+        color:black;
+        font-family:'宋体';
+      }
+
+      .continer .left ul li:hover{
+        background-color:#AAAAAA;
+      }
+
+      .continer .left ul li:hover a{
+        color:white;
+      }
+      
+      /*-----------------------middle------------------------*/
+
+      /*----------------------------------d1--*/
+      .continer .middle .d1{
+        width:800px;
+        height:190px;
+        padding-top:30px;
+        margin-left:25px;
+        margin-right:25px;
+        border-bottom:1px solid #AAAAAA;
+      }
+
+      .continer .middle .d1 h2{
+        width:810px;
+        height:35px;
+        text-align:center;
+        font-size:19px;
+        padding-top:10px;
+      }
+
+      .continer .middle .d1 p{
+        width:810px;
+        height:35px;
+        text-align:center;
+        font-size:18px;
+        line-height:35px;
+      }
+
+      /*--------------------------------------d2--*/
+      .continer .middle .d2{
+        width:800px;
+        height:190px;
+        background-color:;
+        padding-top:55px;
+        margin-left:25px;
+        margin-right:25px;
+        border-bottom:1px solid #AAAAAA;
+      }
+
+      .continer .middle .d2 h2{
+        width:810px;
+        height:35px;
+        font-size:19px;
+        padding-top:10px;
+        margin-left:200px;
+      }
+
+      .continer .middle .d2 p{
+        width:810px;
+        height:35px;
+        font-size:18px;
+        line-height:35px;
+        margin-left:200px;
+      }
+
+      .continer .middle .d2 img{
+        width:70px;
+        float:left;
+        margin-top:27px;
+        margin-left:60px;
+      }
+
+      /*------------------------------------d3--*/
+      .continer .middle .d3{
+        width:800px;
+        height:190px;
+        background-color:;
+        padding-top:55px;
+        margin-left:25px;
+        margin-right:25px;
+        border-bottom:1px solid #AAAAAA;
+      }
+
+      .continer .middle .d3 h2{
+        width:810px;
+        height:35px;
+        font-size:19px;
+        padding-top:10px;
+        margin-left:200px;
+      }
+
+      .continer .middle .d3 p{
+        width:810px;
+        height:35px;
+        font-size:18px;
+        line-height:35px;
+        margin-left:200px;
+      }
+
+      .continer .middle .d3 img{
+        width:70px;
+        float:left;
+        margin-top:27px;
+        margin-left:60px;
+      }
+
+      /*----------------------------------d4--*/
+      .continer .middle .d4{
+        width:800px;
+        height:190px;
+        background-color:;
+        padding-top:55px;
+        margin-left:25px;
+        margin-right:25px;
+        border-bottom:1px solid #AAAAAA;
+      }
+
+      .continer .middle .d4 h2{
+        width:810px;
+        height:35px;
+        font-size:19px;
+        padding-top:10px;
+        margin-left:200px;
+      }
+
+      .continer .middle .d4 p{
+        width:810px;
+        height:35px;
+        font-size:18px;
+        line-height:35px;
+        margin-left:200px;
+      }
+
+      .continer .middle .d4 img{
+        width:70px;
+        float:left;
+        margin-top:27px;
+        margin-left:60px;
+      }
+
+      .continer .middle .d4 a{
+        color:#900B09
+      }
+
+      .continer .middle .d4 p:hover a{
+        color:red
+      }
+
+      /*-----------------------------------d5--*/
+      .continer .middle .d5{
+        width:800px;
+        height:190px;
+        background-color:;
+        padding-top:55px;
+        margin-left:25px;
+        margin-right:25px;
+        border-bottom:1px solid #AAAAAA;
+      }
+
+      .continer .middle .d5 h2{
+        width:810px;
+        height:35px;
+        font-size:19px;
+        padding-top:10px;
+        margin-left:200px;
+        margin-bottom:35px;
+      }
+
+      .continer .middle .d5 p{
+        width:810px;
+        height:35px;
+        font-size:18px;
+        line-height:35px;
+        margin-left:200px;
+      }
+
+      .continer .middle .d5 img:nth-of-type(1){
+        width:61px;
+        float:left;
+        margin-top:40px;
+        margin-left:65px;
+      }
+
+      .continer .middle .d5 img:nth-of-type(2){
+        width:30px;
+        float:left;
+        margin-top:-60px;
+        margin-left:490px;
+      }
+
+      .continer .middle .d5 img:nth-of-type(3){
+        width:90px;
+        float:left;
+        margin-top:-75px;
+        margin-left:277px;
+      }
+
+      .continer .middle .d5 p:nth-of-type(1){
+        font-size:16px;
+        color:#900B09;
+        margin-bottom:-25px;
+        padding-left:200px;
+      }
+
+      .continer .middle .d5 p:nth-of-type(2){
+        font-size:16px;
+        color:black;
+        margin-top:20px;
+        padding-left:200px;
+      }
+
+      /*-------------------------right-------------------------*/
+
+      .continer .right h1{
+        height:40px;
+        margin-bottom:20px;
+        padding-left:55px;
+        font-size:17px;
+        font-weight:550;
+        line-height:40px;
+        color:#6C6C6C;
+        background-color:#1233;
+      }
+      
+      .continer .right h1:nth-of-type(2){
+        margin-top:20px;
+      }
+
+      .continer .right h2{
+        font-size:15px;
+        font-weight:400;
+        margin-top:10px;
+        margin-left:15px;
+        margin-bottom:8px;
+        font-family:'微软雅黑';
+        color:black;
+        font-weight:550;
+      }
+
+      .continer .right ul{
+        margin-top:5px;
+      }
+
+      .continer .right ul li{
+        width:165px;
+        height:30px;
+        list-style:none;
+        padding-top:2px;
+        padding-left:15px;
+        line-height:30px;
+      }
+
+      .continer .right ul li a{
+        color:black;
+        font-family:'宋体';
+      }
+
+      .continer .right ul li:hover{
+        background-color:#AAAAAA;
+      }
+
+      .continer .right ul li:hover a{
+        color:white;
+      }
+      
+
+      
+
+   
+
+      
+
+    </style>
+  </head>
+  <body>
+    <!-----------------------------header---------------------------------->
+
+    <div class="header">
+
+      <!--logo-->
+      <img src="https://i.imgloc.com/2023/07/07/Vpr9hx.png">
+
+      <!--search-->
+      <div class="search">
+
+      </div>
+    </div>
+
+    <!-------------------------------nav----------------------------------->
+
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="#">首页</a>
+        </li>
+        <li>
+          <a href="#">Word</a>
+        </li>
+        <li>
+          <a href="#">Excel</a>
+        </li>
+        <li>
+          <a href="#">PowerPoint</a>
+        </li>
+        <li>
+          <a href="#">PowerBI</a>
+        </li>
+      </ul>
+    </div>
+
+    <!----------------------------continer--------------------------------->
+
+    <div class="continer">
+
+      <!--left-->
+      <div class="left">
+        <h1>必修课</h1>
+        <h2>Word</h2>
+        <ul>
+          <li>
+            <a href="#">基本操作</a>
+          </li>
+          <li>
+            <a href="#">文档排版</a>
+          </li>
+          <li>
+            <a href="#">页面排版</a>
+          </li>
+          <li>
+            <a href="#">图文编排</a>
+          </li>
+          <li>
+            <a href="#">表格制作和编辑</a>
+          </li>
+        </ul>
+
+        <h2>Excel</h2>
+        <ul>
+          <li>
+            <a href="#">基本操作</a>
+          </li>
+          <li>
+            <a href="#">数据处理</a>
+          </li>
+          <li>
+            <a href="#">函数公式</a>
+          </li>
+          <li>
+            <a href="#">图表制作</a>
+          </li>
+          <li>
+            <a href="#">数据透视表</a>
+          </li>
+        </ul>
+
+        <h2>PowerPoint</h2>
+        <ul>
+          <li>
+            <a href="#">基本操作</a>
+          </li>
+          <li>
+            <a href="#">图片形状</a>
+          </li>
+          <li>
+            <a href="#">布尔运算</a>
+          </li>
+          <li>
+            <a href="#">动画功能</a>
+          </li>
+          <li>
+            <a href="#">文本框功能</a>
+          </li>
+        </ul>
+
+        <h1>选修课</h1>
+        <h2>PowerBI</h2>
+        <ul>
+          <li>
+            <a href="#">基本操作</a>
+          </li>
+          <li>
+            <a href="#">功能介绍</a>
+          </li>
+          <li>
+            <a href="#">数据处理</a>
+          </li>
+          <li>
+            <a href="#">DAX数据分析</a>
+          </li>
+          <li>
+            <a href="#">互动可视化图表</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--middle-->
+      <div class="middle">
+        
+        
+
+        <div class="d1">
+          <h2>OFFICE SCHOOL 办公软件技术图文教程</h2>
+          <p>在OFFICE SCHOOL，你可以找到你所需要的办公小技巧。</p>
+          <p>从基础的word，excel，ppt，乃至进阶的powerbi。</p>
+          <h2>从左侧的菜单选择你需要的教程！</h2>
+        </div>
+
+        <div class="d2">
+          <img src="https://i.imgloc.com/2023/07/14/VxEhup.png">
+          <h2>完整的办公软件参考手册</h2>
+          <p>我们的参考手册包含各种办公软件的使用指导。</p>
+          <p>其中包括软件面板的基础介绍。以及其他操作实例。</p>
+        </div>
+
+        <div class="d3">
+          <img src="https://i.postimg.cc/DyBT5ctp/icon2.png">
+          <h2>从何入手？</h2>
+          <p>如果是初学者，请从基础操作知识学起。</p>
+          <p>如果是熟练者，可直接参考案例进行实战操作。</p>
+        </div>
+
+        <div class="d4">
+          <img src="https://i.postimg.cc/X7DcjhZ0/icon3.png">
+          <h2>OFFICE SCHOOL 更新信息</h2>
+          <p>网站将持续更新案例，完善信息。</p>
+          <p>
+            <a href="#" style="text-decoration:underline">网站更新手册</a>
+          </p>
+        </div>
+
+        <div class="d5">
+          <img src="https://i.postimg.cc/dQWw0mJY/icon4.png">
+          <h2>OFFICE SCHOOL 友情链接</h2>
+          <p>微信公众号</p>
+          <p>OFFICE SCHOOL 官方服务号</p>
+          <img src="https://i.postimg.cc/j5BVzv2w/icon5.png">
+          <img src="https://i.postimg.cc/qqrPbqc4/wechat.jpg">
+          
+        </div>
+        
+       
+
+      </div>
+
+      <!--right-->
+      <div class="right">
+        <!--left-->
+      <div class="left">
+        <h1>实战案例</h1>
+        <h2>待更新</h2>
+        <ul>
+          <li>
+            <a href="#">。。。</a>
+          </li>
+          <li>
+            <a href="#">。。。</a>
+          </li>
+          <li>
+            <a href="#">。。。</a>
+          </li>
+          <li>
+            <a href="#">。。。</a>
+          </li>
+          <li>
+            <a href="#">。。。</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
